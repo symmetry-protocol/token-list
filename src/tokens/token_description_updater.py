@@ -93,7 +93,7 @@ def manual_update_descriptions(descriptions):
 if __name__ == "__main__":
     # auto_update_descriptions()
 
-    solana_description = """Synthetify is an upcoming synthetic assets platform, fully built on top of the Solana blockchain. The platform aims to provide a bridge between cryptocurrencies, stocks, fiat money and other financial instruments directly from one decentralized exchange.
+    solana_description = """OOOSynthetify is an upcoming synthetic assets platform, fully built on top of the Solana blockchain. The platform aims to provide a bridge between cryptocurrencies, stocks, fiat money and other financial instruments directly from one decentralized exchange.
 Synthetify solves critical problems of other Synthetic assets platforms, like high fees, long confirmation times and losses caused by arbitrage during sharp market moves.
 Solana blockchain offers orders of magnitude better performance than any other layer one blockchain available on the market right now and thanks to low fees and fast confirmation time is perfect bedrock for applications like Synthetify. Synthetify will introduce its own token that will act as collateral for synthetic assets, reduce fees on Synthetify exchange and hold voting power during governance decisions.
 """
