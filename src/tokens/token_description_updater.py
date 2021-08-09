@@ -93,19 +93,9 @@ def manual_update_descriptions(descriptions):
 if __name__ == "__main__":
     # auto_update_descriptions()
 
-    solana_description = """Solana is building the architecture of their blockchain based on Proof of History (PoH); a proof for verifying order and passage of time between events. The purpose of PoH is used to encode the trustless passage of time into a ledger. A Proof of Stake (PoS) consensus mechanism is then leveraged for confirmation of the current sequence produced by the Proof of History generator. PoS is also used for voting and selecting the next Proof of History generator node and for punishing any validators that act against the interest of the network.
+    solana_description = """ApeXit is a Solana on-chain risk management tool that enables the end-user to instantly close spot holdings over the Solana ecosystem in a tap.
 
-Up to 710k transactions/second on a 1gb network without data partitioning
+The platform aggregates all DEXes, LPs and tokens that a user may have associated with their non-custodial wallets and immediately allows them to get out of all their positions on a single operation.
 
-Proof of History
-Encoding time as data in the replicated state allows for simple and efficient proofs and protocols.
-
-Performant System Architecture
-The network is arranged for maximum throughput and high availability. Our smart contracts bytecode is based on Berkeley Packet Filter designed for fast execution.
-
-Fast Proof of Replication
-A fast streaming Proof of Replication is designed for storing a large distributed ledger.
-
-Consensus independent from transaction flow
-Transactions flow through the network independent of consensus and are limited only by hardware."""
-    manual_update_descriptions({'SOL': solana_description})
+On current crypto volatile markets, apeXit aims to be the fastest and most convenient solution for the user to swap all Solana-based tokens to USDC, a stable usd-pegged cryptocurrency."""
+    manual_update_descriptions({'APEX': solana_description})
