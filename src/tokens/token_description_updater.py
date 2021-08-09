@@ -93,9 +93,8 @@ def manual_update_descriptions(descriptions):
 if __name__ == "__main__":
     # auto_update_descriptions()
 
-    solana_description = """ApeXit is a Solana on-chain risk management tool that enables the end-user to instantly close spot holdings over the Solana ecosystem in a tap.
-
-The platform aggregates all DEXes, LPs and tokens that a user may have associated with their non-custodial wallets and immediately allows them to get out of all their positions on a single operation.
-
-On current crypto volatile markets, apeXit aims to be the fastest and most convenient solution for the user to swap all Solana-based tokens to USDC, a stable usd-pegged cryptocurrency."""
-    manual_update_descriptions({'APEX': solana_description})
+    solana_description = """Synthetify is an upcoming synthetic assets platform, fully built on top of the Solana blockchain. The platform aims to provide a bridge between cryptocurrencies, stocks, fiat money and other financial instruments directly from one decentralized exchange.
+Synthetify solves critical problems of other Synthetic assets platforms, like high fees, long confirmation times and losses caused by arbitrage during sharp market moves.
+Solana blockchain offers orders of magnitude better performance than any other layer one blockchain available on the market right now and thanks to low fees and fast confirmation time is perfect bedrock for applications like Synthetify. Synthetify will introduce its own token that will act as collateral for synthetic assets, reduce fees on Synthetify exchange and hold voting power during governance decisions.
+"""
+    manual_update_descriptions({'SNY': solana_description})
