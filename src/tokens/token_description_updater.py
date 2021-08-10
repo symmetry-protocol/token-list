@@ -93,8 +93,7 @@ def manual_update_descriptions(descriptions):
 if __name__ == "__main__":
     # auto_update_descriptions()
 
-    solana_description = """LikeCoin is a protocol for content attribution, monetization and distribution. LikeCoin chain is a Bonded Proof of Stake blockchain developed on top of Cosmos SDK. As a permissionless protocol, 800+ media chose to adopt LikeCoin with her WordPress plugin. LikeCoin also provides an easy-to-use mobile app, Liker Land, for layman users to read content, reward creators, transfer LikeCoin and delegate to validators.
-    """
+    solana_description = """Buy and Sell NFTs from your favorite content creators, earn crypto by interacting with these creators, or mint your own NFTs and start earning rewards today. Powered by Solana."""
     symbol = 'LIKE'
     print(symbol)
     manual_update_descriptions({symbol: solana_description})
