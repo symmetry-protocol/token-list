@@ -3,11 +3,13 @@ import requests
 from time import sleep
 from pprint import pprint
 
+
 def _get_coins_gecko():
     # response = [ {'id': '01coin', 'name': '01coin', 'symbol': 'zoc'}, ...]
     url = "https://api.coingecko.com/api/v3/coins/list"
     response = json.loads(requests.get(url).text)
     return response
+
 
 def _get_coins_solana_registry():
     """ [{
@@ -26,8 +28,10 @@ def _get_coins_solana_registry():
     token_list = data['tokens']
     return token_list
 
+
 def _get_description_gecko(gecko_id):
-    url = "https://api.coingecko.com/api/v3/coins/{}?tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false".format(gecko_id)
+    url = "https://api.coingecko.com/api/v3/coins/{}?tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false".format(
+        gecko_id)
     response = json.loads(requests.get(url).text)
     description = ""
     if 'description' in response and 'en' in response['description']:
@@ -36,6 +40,8 @@ def _get_description_gecko(gecko_id):
 
 
 counter = 0
+
+
 def _get_descriptions(tokens):
     global counter
 
@@ -44,14 +50,14 @@ def _get_descriptions(tokens):
         counter += 1
         print("#{}".format(counter))
 
-        if 'extensions' not in token or 'coingeckoId' not in token['extensions']: 
+        if 'extensions' not in token or 'coingeckoId' not in token['extensions']:
             print('\t\ttoken {} did not have a gecko id, skipping it ...'.format(counter))
             continue
         gecko_id = token['extensions']['coingeckoId']
         symbol = token['symbol']
         description = _get_description_gecko(gecko_id)
 
-        if len(description) > 0: 
+        if len(description) > 0:
             descriptions[symbol] = description
         sleep(60/50)
 
@@ -60,6 +66,7 @@ def _get_descriptions(tokens):
         print('---------')
 
     return descriptions
+
 
 def _update_descriptions(descriptions):
     """ descriptions = {
@@ -70,18 +77,19 @@ def _update_descriptions(descriptions):
     with open(token_descriptions_filepath, encoding='utf-8') as f:
         data = json.loads(f.read())
 
-    for k,v in descriptions.items():
+    for k, v in descriptions.items():
         data[k] = v
 
     with open(token_descriptions_filepath, 'w', encoding='utf-8') as f:
         json.dump(data, f)
-
+    print('done')
 
 
 def auto_update_descriptions():
     tokens = _get_coins_solana_registry()
     descriptions = _get_descriptions(tokens)
     _update_descriptions(descriptions)
+
 
 def manual_update_descriptions(descriptions):
     """ descriptions = {
@@ -90,10 +98,12 @@ def manual_update_descriptions(descriptions):
     """
     _update_descriptions(descriptions)
 
+
 if __name__ == "__main__":
     # auto_update_descriptions()
 
     solana_description = """Buy and Sell NFTs from your favorite content creators, earn crypto by interacting with these creators, or mint your own NFTs and start earning rewards today. Powered by Solana."""
     symbol = 'LIKE'
     print(symbol)
+    print('---')
     manual_update_descriptions({symbol: solana_description})
