@@ -11695,6 +11695,7 @@
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y/PORT.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "port-finance",
         "website": "https://port.finance/",
         "twitter": "https://twitter.com/port_finance",
         "github": "https://github.com/port-finance/",
