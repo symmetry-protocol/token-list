@@ -7693,6 +7693,7 @@
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW/logo.png",
       "tags": [],
       "extensions": {
+        "coingeckoId": "solanium",
         "website": "https://solanium.io/",
         "waterfallbot": "https://bit.ly/SLIMwaterfall"
       }
