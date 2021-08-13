@@ -102,8 +102,15 @@ def manual_update_descriptions(descriptions):
 if __name__ == "__main__":
     # auto_update_descriptions()
 
-    solana_description = """Buy and Sell NFTs from your favorite content creators, earn crypto by interacting with these creators, or mint your own NFTs and start earning rewards today. Powered by Solana."""
-    symbol = 'LIKE'
+    solana_description = """SAIL is the first ever utility token build on Solana blockchain and fully distributed to the community.
+SAIL is the main utility token for the SAIL ecosystem which will provide Governance, DeFi, Vault and NFT marketplace.
+Four additional tokens will be added to the SAIL ecosystem :
+
+gSAIL (Governance)
+dSAIL (DeFi)
+vSAIL (Vault)
+nSAIL (Opensail NFT Marketplace)"""
+    symbol = 'SAIL'
     print(symbol)
     print('---')
     manual_update_descriptions({symbol: solana_description})
