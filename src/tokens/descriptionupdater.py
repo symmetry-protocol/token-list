@@ -102,15 +102,46 @@ def manual_update_descriptions(descriptions):
 if __name__ == "__main__":
     # auto_update_descriptions()
 
-    solana_description = """SAIL is the first ever utility token build on Solana blockchain and fully distributed to the community.
-SAIL is the main utility token for the SAIL ecosystem which will provide Governance, DeFi, Vault and NFT marketplace.
-Four additional tokens will be added to the SAIL ecosystem :
+    solana_description = """Hedget is a non-custodial options trading platform built on Ethereum and Chromia. Chromia is a relational blockchain database which allows complex transactions to be executed while maintaining decentralization and transparency. 
 
-gSAIL (Governance)
-dSAIL (DeFi)
-vSAIL (Vault)
-nSAIL (Opensail NFT Marketplace)"""
-    symbol = 'SAIL'
+Users can buy and sell options products on Hedget by providing collateral in the form of cryptocurrencies (both stablecoins and traditional cryptocurrencies). It also allows users to protect against downside risk for their crypto holdings as well as their debt positions on other lending protocols such as Compound and Aave.
+
+how hedget works
+ 
+
+What are HGET tokens?
+HGET is the platform’s native token for governance and utility. HGET is used to propose updates to the protocol. Besides that, HGET tokens need to be staked to create and trade option products. 
+
+In the future, HGET tokens will also be used as a security measure for leveraged options. Option sellers who want to provide options without a 1:1 collateral will need to stake HGET tokens.
+
+How does Hedget work?
+The Hedget platform runs on three main components:
+
+ESC: Ethereum smart contract which handles token deposit, withdrawals and physical settlement.
+
+CTD: Chromia-based dApp which handles trade, contract ownership and acts as a bridge to interact with the ESC.
+
+CSW: Client wallet and trading UI which carries out commands using ESC and CTD.
+ 
+
+hedget architecture
+
+Users will be required to put up collateral as they create different option products in order to guarantee the possibility of exercising the option. In the first version, 100% collateral is required. Physical and cash settlement is available. However, the platform would only allow certain combinations of expiry dates and strike prices to ensure that sufficient liquidity is available.
+
+Hedget will also incorporate a decentralized exchange for trading option tokens. Options would be priced in stablecoins such as DAI, USDC and BUSD.
+
+Option tokens are stored in a non-custodial manner, which means users are in control of their own funds. Assets are only transferred when option contracts are traded or exercised.
+ 
+
+There is a 0.02% maker fee and 0.04% taker fee on the underlying assets. The difference between the two fees would be locked for 2 years in a special reserve governed by Hedget’s DAO. In the first 3 to 4 years, 0.02% settlement fees would be paid via the liquidity mining pool.
+
+More details regarding the inner workings of Hedget can be found in their whitepaper.
+
+ 
+
+How do I get HGET?
+You can obtain HGET by purchasing them from an exchange such as FTX or Uniswap. Besides the two exchanges,you can find HGET trading on other various centralized and decentralized cryptocurrency exchanges."""
+    symbol = 'HGET'
     print(symbol)
     print('---')
     manual_update_descriptions({symbol: solana_description})
