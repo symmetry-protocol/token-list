@@ -59,6 +59,23 @@
   "tokens": [
     {
       "chainId": 101,
+      "address": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
+      "symbol": "SUNNY",
+      "name": "Sunny",
+      "decimals": 6,
+      "logoURI": "https://assets.coingecko.com/coins/images/18039/small/90dbe787-8e5f-473c-b923-fe138a7a30ea.png",
+      "tags": [
+        "Aggregator"
+      ],
+      "extensions": {
+        "website": "https://sunny.ag/",
+        "twitter": "https://twitter.com/SunnyAggregator",
+        "serumV3Usdc": "Aubv1QBFh4bwB2wbP1DaPW21YyQBLfgjg8L4PHTaPzRc",
+        "coingeckoId": "sunny-aggregator"
+      }
+    },
+    {
+      "chainId": 101,
       "address": "FYfQ9uaRaYvRiaEGUmct45F9WKam3BYXArTrotnTNFXF",
       "symbol": "SOLA",
       "name": "Sola Token",
