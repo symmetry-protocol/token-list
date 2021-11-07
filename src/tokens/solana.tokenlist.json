@@ -9037,6 +9037,24 @@
     },
     {
       "chainId": 101,
+      "address": "SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp",
+      "symbol": "SLND",
+      "name": "Solend",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp/logo.png",
+      "tags": [
+        "solend",
+        "lending"
+      ],
+      "extensions": {
+        "coingeckoId": "solend",
+        "twitter": "https://twitter.com/solendprotocol",
+          "website": "https://solend.fi"
+  
+      }
+    },
+    {
+      "chainId": 101,
       "address": "HBHMiauecxer5FCzPeXgE2A8ZCf7fQgxxwo4vfkFtC7s",
       "symbol": "SLNDN",
       "name": "Solanadon",
