@@ -59,6 +59,21 @@
   "tokens": [
     {
       "chainId": 101,
+      "address": "AURYydfxJib1ZkTir1Jn1J9ECYUtjb6rKQVmtYaixWPP",
+      "symbol": "AURY",
+      "name": "Aurory",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/AURYydfxJib1ZkTir1Jn1J9ECYUtjb6rKQVmtYaixWPP/logo.png",
+      "tags": [
+        "utility-token"
+      ],
+      "extensions": {
+        "website": "https://aurory.io",
+        "description": "Aurory Token"
+      }
+    },
+    {
+      "chainId": 101,
       "address": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
       "symbol": "SUNNY",
       "name": "Sunny",
