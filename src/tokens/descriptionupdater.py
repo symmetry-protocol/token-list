@@ -102,46 +102,18 @@ def manual_update_descriptions(descriptions):
 if __name__ == "__main__":
     # auto_update_descriptions()
 
-    solana_description = """Hedget is a non-custodial options trading platform built on Ethereum and Chromia. Chromia is a relational blockchain database which allows complex transactions to be executed while maintaining decentralization and transparency. 
+    solana_description = """PRISM is a dex aggregator on Solana with super-smooth interface that auto-routes your transactions across multiple liquidity sources to guarantee best prices. The platform has simple & advanced features, simple being a user-friendly swap interface, while Advanced - A full-fledged DEX based on order books.
 
-Users can buy and sell options products on Hedget by providing collateral in the form of cryptocurrencies (both stablecoins and traditional cryptocurrencies). It also allows users to protect against downside risk for their crypto holdings as well as their debt positions on other lending protocols such as Compound and Aave.
+PRISM Token Utility:
 
-how hedget works
- 
+Governance
 
-What are HGET tokens?
-HGET is the platform’s native token for governance and utility. HGET is used to propose updates to the protocol. Besides that, HGET tokens need to be staked to create and trade option products. 
+Prism Fee Structure: 20% of fees go to PRISM Host (platform integrating/hosting prism ui) 40% of fees go into buy & burn of PRISM 40% of fees get airdropped to PRISM stakers
 
-In the future, HGET tokens will also be used as a security measure for leveraged options. Option sellers who want to provide options without a 1:1 collateral will need to stake HGET tokens.
+Swap Fee Discounts for PRISM stakers (Tiers will be announced later)
 
-How does Hedget work?
-The Hedget platform runs on three main components:
-
-ESC: Ethereum smart contract which handles token deposit, withdrawals and physical settlement.
-
-CTD: Chromia-based dApp which handles trade, contract ownership and acts as a bridge to interact with the ESC.
-
-CSW: Client wallet and trading UI which carries out commands using ESC and CTD.
- 
-
-hedget architecture
-
-Users will be required to put up collateral as they create different option products in order to guarantee the possibility of exercising the option. In the first version, 100% collateral is required. Physical and cash settlement is available. However, the platform would only allow certain combinations of expiry dates and strike prices to ensure that sufficient liquidity is available.
-
-Hedget will also incorporate a decentralized exchange for trading option tokens. Options would be priced in stablecoins such as DAI, USDC and BUSD.
-
-Option tokens are stored in a non-custodial manner, which means users are in control of their own funds. Assets are only transferred when option contracts are traded or exercised.
- 
-
-There is a 0.02% maker fee and 0.04% taker fee on the underlying assets. The difference between the two fees would be locked for 2 years in a special reserve governed by Hedget’s DAO. In the first 3 to 4 years, 0.02% settlement fees would be paid via the liquidity mining pool.
-
-More details regarding the inner workings of Hedget can be found in their whitepaper.
-
- 
-
-How do I get HGET?
-You can obtain HGET by purchasing them from an exchange such as FTX or Uniswap. Besides the two exchanges,you can find HGET trading on other various centralized and decentralized cryptocurrency exchanges."""
-    symbol = 'HGET'
+Stakers get tickets in trading competitions"""
+    symbol = 'PRISM'
     print(symbol)
     print('---')
     manual_update_descriptions({symbol: solana_description})
